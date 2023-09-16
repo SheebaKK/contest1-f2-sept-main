@@ -13,8 +13,9 @@ function printDeveloper() {
 // 2. Add Data
 function addData() {
   const name=prompt("Enter the name of employee");
-  const age=prompt("Enter the age of employee");
+  let age=prompt("Enter the age of employee");
   const profession=prompt("Enter the profession of employee");
+  age=Number(age);
   if(name && !isNaN(age) && profession){
     newData={name,age,profession};
     data.push(newData);
